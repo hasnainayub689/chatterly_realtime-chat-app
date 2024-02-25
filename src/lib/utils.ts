@@ -1,0 +1,8 @@
+// To add the conditional class to the app
+
+import { ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+export function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs));
+}
